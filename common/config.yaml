@@ -7,12 +7,8 @@ tester_name: Leo
 app_host:
 # 域名1
 #host: http://localhost:9999
-#host: https://test-backend.ethh.com
-host: https://backend.ethh.com
 # 后台管理域名2
 #backend_host: http://localhost:9999
-#backend_host: https://test-backend.ethh.com
-backend_host: https://backend.ethh.com
 
 # 用例执行类型 0: 冒烟测试(yaml文件未注明is_run=False的用例，默认都执行)、1: 日常巡检(yaml文件未注明is_run=True的用例，默认不执行)
 execution_type: 1
@@ -33,8 +29,8 @@ excel_report: False
 # 我发现很多拉代码的小伙伴这里配置都没改，所有的通知都发到我这里来了哦~~麻烦看到这里的小伙伴自己改一下相关配置
 # 钉钉相关配置
 ding_talk:
-  webhook: https://oapi.dingtalk.com/robot/send?access_token=2762af512313123
-  secret: SEC613213123123825b3e27907ded9ed47fe7d5b17386d84580ab7848af52ec3
+  webhook:
+  secret:
 #  webhook:
 #  secret:
 # 数据库相关配置
@@ -52,20 +48,18 @@ mirror_source: http://mirrors.aliyun.com/pypi/simple/
 # 企业通知的相关配置
 wechat:
   webhook:
-#  webhook: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=22748687-fa3b-4e48-a5d7-0502cef422b4
 
 ### 邮箱必填，需要全部都配置好，程序运行失败时，会发送邮件通知!!!!
 ### 邮箱必填，需要全部都配置好，程序运行失败时，会发送邮件通知!!!!
 ### 邮箱必填，需要全部都配置好，程序运行失败时，会发送邮件通知!!!!
 ### 重要的事情说三遍
 email:
-  send_user: acztsfwyyx@163.com
+  send_user:
   email_host: smtp.163.com
   # 自己到163邮箱中配置stamp_key
-  stamp_key: WNbguxqwKqkuDm3u
+  stamp_key:
   # 收件人改成自己的邮箱
-  send_list: sunny393939zzz@gmail.com,wangmingbn@gmail.com
-#  send_list: sunny393939zzz@gmail.com,wangmingbn@gmail.com,felix.deng@mcgrp.com,asutinhu@gmail.com
+  send_list:
 
 # 飞书通知
 lark:
@@ -73,7 +67,7 @@ lark:
 
 # telegram群通知
 tg:
-  token: 7600266569:AAE43aJLlGOE7BgA0HVeM03M0nX8dOXFz5A
-  chat_id: "-4688426038"
-  jenkins_skip_url: https://jenkins-stg.ethh.com/job/生产环境-接口自动化定时巡检
+  token:
+  chat_id:
+  jenkins_skip_url:
 
